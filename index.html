@@ -467,13 +467,15 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: 50;
+            width: 100%;
+            text-align: center;
         }
 
         .attack-text {
             font-family: 'Impact', 'Arial Black', sans-serif;
-            font-size: 30px; /* Ridotto da 80px */
+            font-size: 18px; /* ULTERIORMENTE RIDOTTO da 30px */
             font-weight: 900;
-            letter-spacing: 3px; /* Ridotto da 8px */
+            letter-spacing: 2px; /* Ridotto da 8px */
             text-align: center;
             position: absolute;
             left: 50%;
@@ -485,6 +487,7 @@
                 2px -2px 0px #000,
                 -2px 2px 0px #000,
                 0 0 10px rgba(255, 255, 255, 0.5);
+            width: 100%;
         }
 
         .yo-samurai {
@@ -499,7 +502,7 @@
             }
             50% {
                 opacity: 0;
-                transform: translateX(-50%) scale(1.2) rotateX(90deg);
+                transform: translateX(-50%) scale(1.1) rotateX(90deg); /* Ridotto da 1.2 */
             }
             51%, 100% {
                 opacity: 0;
@@ -519,15 +522,15 @@
             }
             50% {
                 opacity: 0;
-                transform: translateX(-50%) scale(0.8) rotateX(-45deg);
+                transform: translateX(-50%) scale(0.7) rotateX(-45deg); /* Ridotto da 0.8 */
             }
             55% {
                 opacity: 1;
-                transform: translateX(-50%) scale(1.3) rotateX(0deg);
+                transform: translateX(-50%) scale(1.1) rotateX(0deg); /* Ridotto da 1.3 */
             }
             75% {
                 opacity: 1;
-                transform: translateX(-50%) scale(1.1) rotateX(0deg);
+                transform: translateX(-50%) scale(1.05) rotateX(0deg); /* Ridotto da 1.1 */
             }
             100% {
                 opacity: 1;
@@ -560,8 +563,19 @@
             .black-slash { height: 100px; }
             .white-slash { width: 350px; height: 5px; }
             
-            .attack-text { font-size: 80px; letter-spacing: 8px; }
+            .attack-text { 
+                font-size: 60px; /* Ridotto da 80px per essere più bilanciato */
+                letter-spacing: 6px; /* Ridotto da 8px */
+            }
             .text-container { top: 15%; }
+        }
+
+        /* Per schermi molto grandi */
+        @media (min-width: 1200px) {
+            .attack-text { 
+                font-size: 80px;
+                letter-spacing: 8px;
+            }
         }
 
         /* Istruzioni - NASCONDI SU MOBILE */
