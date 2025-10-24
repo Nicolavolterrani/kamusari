@@ -129,41 +129,48 @@
             }
         }
 
-        /* Corpo serpente viola con anelli - DIMENSIONI MOBILE */
+        /* Corpo Oden - Stile One Piece */
         .oden-body {
             position: relative;
-            width: 90px; /* Ridotto da 180px */
-            height: 200px; /* Ridotto da 400px */
+            width: 90px;
+            height: 200px;
         }
 
-        .snake-segment {
+        /* Torso di Oden - stile samurai */
+        .oden-torso {
+            width: 80px;
+            height: 120px;
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #8B4513 100%);
+            border-radius: 15px 15px 10px 10px;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        /* Kimono Oden */
+        .oden-kimono {
             position: absolute;
-            width: 35px; /* Ridotto da 70px */
-            height: 35px; /* Ridotto da 70px */
-            background: linear-gradient(135deg, #7b4bc8 0%, #a066db 50%, #7b4bc8 100%);
-            border-radius: 50%;
-            border: 2px solid #fff; /* Ridotto da 3px */
+            width: 90px;
+            height: 100px;
+            background: linear-gradient(180deg, #4A235A 0%, #6C3483 50%, #4A235A 100%);
+            bottom: -10px;
+            left: -5px;
+            border-radius: 10px 10px 20px 20px;
+            z-index: -1;
         }
 
-        .seg1 { left: 27px; top: 0; }
-        .seg2 { left: 35px; top: 30px; }
-        .seg3 { left: 27px; top: 60px; }
-        .seg4 { left: 20px; top: 90px; }
-        .seg5 { left: 15px; top: 120px; }
-        .seg6 { left: 22px; top: 150px; }
-
-        /* Testa Oden - RIDOTTA PER MOBILE */
+        /* Testa Oden */
         .oden-head {
             position: absolute;
-            left: 25px; /* Ridotto da 50px */
-            top: -30px; /* Ridotto da -60px */
-            width: 45px; /* Ridotto da 90px */
-            height: 45px; /* Ridotto da 90px */
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 45px;
+            height: 45px;
             background: #f5d5a8;
             border-radius: 50%;
-            border: 2px solid #7b4bc8; /* Ridotto da 4px */
+            border: 2px solid #4A235A;
             z-index: 15;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ridotto */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         }
 
         .oden-face {
@@ -172,26 +179,92 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 25px; /* Ridotto da 50px */
         }
 
-        /* Braccia/gambe Oden - RIDOTTE */
-        .oden-limbs {
+        /* Capelli Oden - stile codino */
+        .oden-hair {
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 30px;
+            height: 40px;
+            background: #2C3E50;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50% 50% 0 0;
+            z-index: -1;
         }
 
-        .limb {
+        .oden-ponytail {
             position: absolute;
-            background: linear-gradient(180deg, #a066db 0%, #7b4bc8 100%);
-            border-radius: 8px; /* Ridotto da 15px */
+            width: 15px;
+            height: 60px;
+            background: #2C3E50;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0 0 8px 8px;
+            z-index: -2;
         }
 
-        .oden-arm1 { width: 18px; height: 50px; left: 10px; top: 40px; transform: rotate(-40deg); }
-        .oden-arm2 { width: 18px; height: 50px; right: 15px; top: 50px; transform: rotate(30deg); }
-        .oden-leg1 { width: 20px; height: 60px; left: 18px; bottom: -40px; transform: rotate(-15deg); }
-        .oden-leg2 { width: 20px; height: 60px; right: 25px; bottom: -30px; transform: rotate(25deg); }
+        /* Braccia Oden */
+        .oden-arm {
+            position: absolute;
+            background: linear-gradient(180deg, #f5d5a8 0%, #e6c39c 100%);
+            border-radius: 10px;
+            z-index: 5;
+        }
+
+        .oden-arm1 { 
+            width: 18px; 
+            height: 50px; 
+            left: -10px; 
+            top: 50px; 
+            transform: rotate(-30deg);
+        }
+
+        .oden-arm2 { 
+            width: 18px; 
+            height: 50px; 
+            right: -10px; 
+            top: 50px; 
+            transform: rotate(30deg);
+        }
+
+        /* Gambe Oden - Hakama */
+        .oden-leg {
+            position: absolute;
+            width: 25px;
+            height: 70px;
+            background: linear-gradient(180deg, #4A235A 0%, #6C3483 100%);
+            border-radius: 8px;
+            bottom: -40px;
+        }
+
+        .oden-leg1 { left: 15px; transform: rotate(-5deg); }
+        .oden-leg2 { right: 15px; transform: rotate(5deg); }
+
+        /* Spada di Oden - Nitoryu style */
+        .oden-sword {
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #1a1a1a 0%, #000 50%, #1a1a1a 100%);
+            border-radius: 2px;
+            top: 60px;
+            right: -70px;
+            transform: rotate(45deg);
+            z-index: 20;
+        }
+
+        .oden-sword-handle {
+            position: absolute;
+            width: 12px;
+            height: 6px;
+            background: #654321;
+            left: -10px;
+            top: -1px;
+            border-radius: 2px;
+        }
 
         /* ROGER - Personaggio rosso/arancio dietro (destra) */
         .roger {
@@ -205,59 +278,49 @@
 
         @keyframes rogerSlash {
             0%, 100% { transform: translate(-50%, -50%) rotate(-15deg); }
-            50% { transform: translate(-50%, -50%) rotate(-5deg) translateX(-10px); } /* Ridotto movimento */
+            50% { transform: translate(-50%, -50%) rotate(-5deg) translateX(-10px); }
         }
 
-        /* Corpo Roger - RIDOTTO */
+        /* Corpo Roger - Stile One Piece */
         .roger-body {
             position: relative;
-            width: 80px; /* Ridotto da 160px */
-            height: 140px; /* Ridotto da 280px */
+            width: 80px;
+            height: 140px;
         }
 
         .roger-torso {
-            width: 70px; /* Ridotto da 140px */
-            height: 90px; /* Ridotto da 180px */
+            width: 70px;
+            height: 90px;
             background: linear-gradient(135deg, #ff6b4a 0%, #ff8c6b 50%, #ff6b4a 100%);
-            border-radius: 15px 15px 10px 10px; /* Ridotto */
+            border-radius: 15px 15px 10px 10px;
             position: relative;
         }
 
-        /* Cintura gialla */
-        .roger-belt {
-            position: absolute;
-            width: 100%;
-            height: 6px; /* Ridotto da 12px */
-            background: linear-gradient(90deg, #ffd700 0%, #ffe44d 50%, #ffd700 100%);
-            top: 60%;
-            border-radius: 3px; /* Ridotto da 6px */
-        }
-
-        /* Mantello rosso scuro */
+        /* Mantello Roger - stile capitano */
         .roger-cape {
             position: absolute;
-            width: 75px; /* Ridotto da 150px */
-            height: 70px; /* Ridotto da 140px */
+            width: 75px;
+            height: 70px;
             background: linear-gradient(180deg, #cc3333 0%, #991f1f 100%);
-            bottom: -10px; /* Ridotto da -20px */
-            left: -3px; /* Ridotto da -5px */
-            border-radius: 5px 5px 15px 15px; /* Ridotto */
+            bottom: -10px;
+            left: -3px;
+            border-radius: 5px 5px 15px 15px;
             z-index: -1;
         }
 
-        /* Testa Roger - RIDOTTA */
+        /* Testa Roger */
         .roger-head {
             position: absolute;
             left: 50%;
-            top: -25px; /* Ridotto da -50px */
+            top: -25px;
             transform: translateX(-50%);
-            width: 42px; /* Ridotto da 85px */
-            height: 42px; /* Ridotto da 85px */
+            width: 42px;
+            height: 42px;
             background: #f5d5a8;
             border-radius: 50%;
-            border: 2px solid #ff6b4a; /* Ridotto da 4px */
+            border: 2px solid #ff6b4a;
             z-index: 20;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ridotto */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         }
 
         .roger-face {
@@ -266,18 +329,65 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 22px; /* Ridotto da 45px */
         }
 
-        /* Braccia Roger - RIDOTTE */
+        /* Baffi e capelli Roger */
+        .roger-mustache {
+            position: absolute;
+            width: 30px;
+            height: 8px;
+            background: #2C3E50;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+
+        .roger-hair {
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            background: #2C3E50;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50% 50% 0 0;
+            z-index: -1;
+        }
+
+        /* Cappello Roger */
+        .roger-hat {
+            position: absolute;
+            width: 45px;
+            height: 15px;
+            background: #ffd700;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 8px 8px 0 0;
+            z-index: 25;
+        }
+
+        .roger-hat-feather {
+            position: absolute;
+            width: 3px;
+            height: 25px;
+            background: #ff6b4a;
+            top: -25px;
+            right: 10px;
+            border-radius: 2px;
+            transform: rotate(-10deg);
+        }
+
+        /* Braccia Roger */
         .roger-arm-right {
             position: absolute;
-            width: 19px; /* Ridotto da 38px */
-            height: 55px; /* Ridotto da 110px */
+            width: 19px;
+            height: 55px;
             background: linear-gradient(180deg, #ff8c6b 0%, #ff6b4a 100%);
-            border-radius: 10px; /* Ridotto da 19px */
-            right: -13px; /* Ridotto da -25px */
-            top: 15px; /* Ridotto da 30px */
+            border-radius: 10px;
+            right: -13px;
+            top: 15px;
             transform: rotate(45deg);
             z-index: 25;
             animation: armSwing 1.5s ease-in-out infinite;
@@ -293,49 +403,170 @@
 
         .roger-arm-left {
             position: absolute;
-            width: 18px; /* Ridotto da 35px */
-            height: 50px; /* Ridotto da 100px */
+            width: 18px;
+            height: 50px;
             background: linear-gradient(180deg, #ff8c6b 0%, #ff6b4a 100%);
-            border-radius: 9px; /* Ridotto da 17px */
-            left: -10px; /* Ridotto da -20px */
-            top: 20px; /* Ridotto da 40px */
+            border-radius: 9px;
+            left: -10px;
+            top: 20px;
             transform: rotate(-30deg);
         }
 
-        /* Gambe Roger - RIDOTTE */
+        /* Gambe Roger */
         .roger-leg {
             position: absolute;
-            width: 20px; /* Ridotto da 40px */
-            height: 55px; /* Ridotto da 110px */
+            width: 20px;
+            height: 55px;
             background: linear-gradient(180deg, #ff6b4a 0%, #cc3333 100%);
-            border-radius: 10px; /* Ridotto da 20px */
-            bottom: -15px; /* Ridotto da -30px */
+            border-radius: 10px;
+            bottom: -15px;
         }
 
         .roger-leg1 { left: 12px; transform: rotate(-10deg); }
         .roger-leg2 { right: 12px; transform: rotate(10deg); }
 
-        /* SPADA NERA - RIDOTTA */
+        /* SPADA CON MOVIMENTO AMPIO E SCIA FISSA */
         .sword {
             position: absolute;
-            right: -60px; /* Ridotto da -120px */
+            right: -60px;
             top: 0px;
-            transform-origin: 15px 50%; /* Ridotto da 30px */
+            transform-origin: 15px 50%;
             z-index: 30;
             animation: swordStrike 1.5s ease-in-out infinite;
         }
 
         @keyframes swordStrike {
-            0% { transform: rotate(-90deg) translateX(-10px); }
-            30% { transform: rotate(-50deg) translateX(0); }
-            50% { transform: rotate(-20deg) translateX(5px); }
-            70% { transform: rotate(-50deg) translateX(0); }
-            100% { transform: rotate(-90deg) translateX(-10px); }
+            0% { 
+                transform: rotate(-150deg) translateX(-30px) translateY(-15px);
+                opacity: 0.8;
+            }
+            20% {
+                transform: rotate(-120deg) translateX(-20px) translateY(-10px);
+                opacity: 1;
+            }
+            30% { 
+                transform: rotate(-80deg) translateX(-10px) translateY(-5px);
+                opacity: 1;
+            }
+            45% { 
+                transform: rotate(-40deg) translateX(0) translateY(0);
+                opacity: 1;
+            }
+            50% { 
+                transform: rotate(-25deg) translateX(5px) translateY(2px);
+                opacity: 1;
+            }
+            55% { 
+                transform: rotate(-40deg) translateX(0) translateY(0);
+                opacity: 1;
+            }
+            70% { 
+                transform: rotate(-80deg) translateX(-10px) translateY(-5px);
+                opacity: 1;
+            }
+            80% {
+                transform: rotate(-120deg) translateX(-20px) translateY(-10px);
+                opacity: 1;
+            }
+            100% { 
+                transform: rotate(-150deg) translateX(-30px) translateY(-15px);
+                opacity: 0.8;
+            }
+        }
+
+        /* ALONE FISSO INTORNO ALLA SPADA */
+        .sword-aura {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 29;
+            opacity: 0.7;
+            animation: auraPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes auraPulse {
+            0%, 100% { 
+                opacity: 0.6;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            50% { 
+                opacity: 0.9;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        .aura-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle, 
+                rgba(255, 0, 0, 0.8) 0%,
+                rgba(139, 0, 0, 0.6) 30%,
+                rgba(0, 0, 0, 0.8) 70%,
+                transparent 100%);
+            filter: blur(5px);
+        }
+
+        .aura-outer {
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, 
+                transparent 0%,
+                rgba(255, 69, 0, 0.4) 40%,
+                rgba(139, 0, 0, 0.3) 60%,
+                transparent 100%);
+            filter: blur(8px);
+            animation: outerAura 2s ease-in-out infinite;
+        }
+
+        @keyframes outerAura {
+            0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.2); }
+        }
+
+        /* SAETTE CHE PARTONO DALL'ALONE */
+        .lightning-container {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 28;
+        }
+
+        .lightning {
+            position: absolute;
+            background: linear-gradient(90deg, 
+                transparent 0%,
+                #ff4500 30%,
+                #ffff00 50%,
+                #ff4500 70%,
+                transparent 100%);
+            border-radius: 1px;
+            opacity: 0;
+            animation: lightningFlash 1.5s ease-out infinite;
+        }
+
+        @keyframes lightningFlash {
+            0%, 40% { opacity: 0; }
+            45%, 55% { opacity: 0.8; }
+            60%, 100% { opacity: 0; }
         }
 
         .sword-blade {
-            width: 110px; /* Ridotto da 220px */
-            height: 7px; /* Ridotto da 14px */
+            width: 110px;
+            height: 7px;
             background: linear-gradient(90deg, 
                 #1a1a1a 0%, 
                 #000 10%, 
@@ -344,11 +575,13 @@
                 #1a1a1a 60%,
                 #000 80%,
                 #2a2a2a 100%);
-            border-radius: 0 4px 4px 0; /* Ridotto */
+            border-radius: 0 4px 4px 0;
             position: relative;
             box-shadow: 
-                0 0 8px rgba(255, 255, 255, 0.3),
+                0 0 15px rgba(255, 0, 0, 0.7),
+                0 0 30px rgba(255, 69, 0, 0.5),
                 0 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 31;
         }
 
         .sword-blade::before {
@@ -358,112 +591,214 @@
             left: 10px;
             right: 15px;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
         }
 
         .sword-handle {
             position: absolute;
-            left: -14px; /* Ridotto da -28px */
+            left: -14px;
             top: 50%;
             transform: translateY(-50%);
-            width: 16px; /* Ridotto da 32px */
-            height: 11px; /* Ridotto da 22px */
+            width: 16px;
+            height: 11px;
             background: linear-gradient(135deg, #654321, #8b6914);
-            border-radius: 2px; /* Ridotto da 4px */
+            border-radius: 2px;
+            z-index: 31;
         }
 
         .sword-guard {
             position: absolute;
-            left: -2px; /* Ridotto da -3px */
+            left: -2px;
             top: 50%;
             transform: translateY(-50%);
-            width: 6px; /* Ridotto da 12px */
-            height: 16px; /* Ridotto da 32px */
+            width: 6px;
+            height: 16px;
             background: linear-gradient(135deg, #c9a236, #ffd700);
-            border-radius: 1px; /* Ridotto da 2px */
+            border-radius: 1px;
+            z-index: 31;
         }
 
-        /* SLASH NERO DIAGONALE - RIDOTTO */
-        .black-slash {
+        /* SCIA DELLA SPADA - EFFETTO DRAMMATICO */
+        .sword-trail {
             position: absolute;
-            width: 140%;
-            height: 50px; /* Ridotto da 100px */
-            background: linear-gradient(to bottom,
+            width: 200px;
+            height: 15px;
+            background: linear-gradient(90deg, 
                 transparent 0%,
-                rgba(0, 0, 0, 0.95) 35%,
-                rgba(0, 0, 0, 0.98) 50%,
-                rgba(0, 0, 0, 0.95) 65%,
+                #ff0000 20%,
+                #8B0000 40%,
+                #000000 60%,
                 transparent 100%);
             top: 50%;
-            left: -20%;
+            left: 25%;
             transform: translateY(-50%) rotate(-40deg);
             z-index: 8;
-            animation: slashMove 1.5s ease-in-out infinite;
+            border-radius: 8px;
+            opacity: 0;
+            filter: blur(5px);
+            animation: swordTrail 1.5s ease-in-out infinite;
         }
 
-        @keyframes slashMove {
-            0% { 
-                transform: translateY(-50%) rotate(-40deg) translateX(-40px);
+        @keyframes swordTrail {
+            0%, 40% {
                 opacity: 0;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.1) translateX(-100px);
             }
             45% {
-                opacity: 0;
+                opacity: 0.8;
+                transform: translateY(-50%) rotate(-40deg) scaleX(1) translateX(0);
             }
             50% {
                 opacity: 1;
-                transform: translateY(-50%) rotate(-40deg) translateX(0px);
+                transform: translateY(-50%) rotate(-40deg) scaleX(1.2) translateX(50px);
+                filter: blur(3px) brightness(2);
             }
-            100% { 
-                transform: translateY(-50%) rotate(-40deg) translateX(40px);
-                opacity: 0.8;
+            55% {
+                opacity: 0.9;
+                transform: translateY(-50%) rotate(-40deg) scaleX(1.1) translateX(100px);
+                filter: blur(4px) brightness(1.5);
+            }
+            70% {
+                opacity: 0.7;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.9) translateX(150px);
+                filter: blur(6px) brightness(1.2);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.5) translateX(200px);
+                filter: blur(8px) brightness(1);
             }
         }
 
-        /* EFFETTO SLASH BIANCO LUMINOSO - RIDOTTO */
+        /* SCIA SECONDARIA - EFFETTO ENERGETICO */
+        .energy-trail {
+            position: absolute;
+            width: 180px;
+            height: 8px;
+            background: linear-gradient(90deg, 
+                transparent 0%,
+                #ff4500 30%,
+                #ff0000 50%,
+                #8B0000 70%,
+                transparent 100%);
+            top: 48%;
+            left: 30%;
+            transform: translateY(-50%) rotate(-40deg);
+            z-index: 7;
+            border-radius: 4px;
+            opacity: 0;
+            filter: blur(8px);
+            animation: energyTrail 1.5s ease-in-out infinite;
+        }
+
+        @keyframes energyTrail {
+            0%, 42% {
+                opacity: 0;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.1) translateX(-80px);
+            }
+            48% {
+                opacity: 0.9;
+                transform: translateY(-50%) rotate(-40deg) scaleX(1.3) translateX(20px);
+                filter: blur(6px) brightness(3);
+            }
+            52% {
+                opacity: 0.8;
+                transform: translateY(-50%) rotate(-40deg) scaleX(1.1) translateX(80px);
+                filter: blur(8px) brightness(2);
+            }
+            65% {
+                opacity: 0.6;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.8) translateX(140px);
+                filter: blur(10px) brightness(1.5);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.3) translateX(200px);
+                filter: blur(12px) brightness(1);
+            }
+        }
+
+        /* PARTICELLE DI ENERGIA */
+        .energy-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 6;
+        }
+
+        .energy-particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0;
+            animation: particleFly 1.5s ease-out infinite;
+        }
+
+        @keyframes particleFly {
+            0%, 45% {
+                opacity: 0;
+                transform: translate(0, 0) scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translate(0, 0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--p-dx), var(--p-dy)) scale(0);
+            }
+        }
+
+        /* SLASH BIANCO LUMINOSO - MIGLIORATO */
         .white-slash {
             position: absolute;
-            width: 175px; /* Ridotto da 350px */
-            height: 3px; /* Ridotto da 5px */
+            width: 350px;
+            height: 5px;
             background: linear-gradient(90deg, 
                 transparent 0%,
                 rgba(255, 255, 255, 0.3) 20%,
                 rgba(255, 255, 255, 1) 50%,
-                rgba(255, 255, 255, 0.3) 80%,
+                rgba(255, 100, 100, 0.3) 80%,
                 transparent 100%);
             top: 48%;
             left: 25%;
             transform: translateY(-50%) rotate(-40deg);
             z-index: 35;
             box-shadow: 
-                0 0 10px rgba(255, 255, 255, 0.9),
-                0 0 20px rgba(255, 255, 255, 0.5),
-                0 0 30px rgba(255, 255, 255, 0.3);
+                0 0 30px rgba(255, 255, 255, 0.9),
+                0 0 60px rgba(255, 255, 255, 0.7),
+                0 0 100px rgba(255, 100, 100, 0.5);
             animation: whiteSlashGlow 1.5s ease-in-out infinite;
         }
 
         @keyframes whiteSlashGlow {
             0%, 45% { 
                 opacity: 0;
-                transform: translateY(-50%) rotate(-40deg) scaleX(0.5);
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.1);
             }
             50% { 
                 opacity: 1;
-                transform: translateY(-50%) rotate(-40deg) scaleX(1.3);
+                transform: translateY(-50%) rotate(-40deg) scaleX(1.5);
             }
             55% {
                 opacity: 0.9;
+                transform: translateY(-50%) rotate(-40deg) scaleX(1.3);
+            }
+            70% {
+                opacity: 0.7;
                 transform: translateY(-50%) rotate(-40deg) scaleX(1.1);
             }
             100% { 
-                opacity: 0.7;
-                transform: translateY(-50%) rotate(-40deg) scaleX(1);
+                opacity: 0;
+                transform: translateY(-50%) rotate(-40deg) scaleX(0.8);
             }
         }
 
         /* TESTO ANIMATO - RIDOTTO PER MOBILE */
         .text-container {
             position: absolute;
-            top: 10%; /* Spostato più in alto */
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
             z-index: 50;
@@ -473,9 +808,9 @@
 
         .attack-text {
             font-family: 'Impact', 'Arial Black', sans-serif;
-            font-size: 18px; /* ULTERIORMENTE RIDOTTO da 30px */
+            font-size: 18px;
             font-weight: 900;
-            letter-spacing: 2px; /* Ridotto da 8px */
+            letter-spacing: 2px;
             text-align: center;
             position: absolute;
             left: 50%;
@@ -502,7 +837,7 @@
             }
             50% {
                 opacity: 0;
-                transform: translateX(-50%) scale(1.1) rotateX(90deg); /* Ridotto da 1.2 */
+                transform: translateX(-50%) scale(1.1) rotateX(90deg);
             }
             51%, 100% {
                 opacity: 0;
@@ -522,15 +857,15 @@
             }
             50% {
                 opacity: 0;
-                transform: translateX(-50%) scale(0.7) rotateX(-45deg); /* Ridotto da 0.8 */
+                transform: translateX(-50%) scale(0.7) rotateX(-45deg);
             }
             55% {
                 opacity: 1;
-                transform: translateX(-50%) scale(1.1) rotateX(0deg); /* Ridotto da 1.3 */
+                transform: translateX(-50%) scale(1.1) rotateX(0deg);
             }
             75% {
                 opacity: 1;
-                transform: translateX(-50%) scale(1.05) rotateX(0deg); /* Ridotto da 1.1 */
+                transform: translateX(-50%) scale(1.05) rotateX(0deg);
             }
             100% {
                 opacity: 1;
@@ -541,31 +876,34 @@
         /* MEDIA QUERIES PER DISPOSITIVI PIÙ GRANDI */
         @media (min-width: 768px) {
             /* Ripristina dimensioni originali per tablet e desktop */
-            .oden-body { width: 180px; height: 400px; }
-            .snake-segment { width: 70px; height: 70px; }
-            .oden-head { width: 90px; height: 90px; left: 50px; top: -60px; }
-            .oden-face { font-size: 50px; }
-            .limb { border-radius: 15px; }
-            .oden-arm1, .oden-arm2 { width: 35px; height: 100px; }
-            .oden-leg1, .oden-leg2 { width: 40px; height: 120px; }
+            .oden-body { width: 180px; height: 250px; }
+            .oden-torso { width: 160px; height: 150px; }
+            .oden-kimono { width: 180px; height: 120px; }
+            .oden-head { width: 90px; height: 90px; top: -20px; }
+            .oden-arm { width: 35px; height: 100px; }
+            .oden-leg { width: 50px; height: 110px; }
+            .oden-sword { width: 160px; height: 6px; right: -140px; }
             
-            .roger-body { width: 160px; height: 280px; }
-            .roger-torso { width: 140px; height: 180px; }
-            .roger-head { width: 85px; height: 85px; top: -50px; }
-            .roger-face { font-size: 45px; }
+            .roger-body { width: 160px; height: 200px; }
+            .roger-torso { width: 140px; height: 120px; }
+            .roger-head { width: 85px; height: 85px; top: -40px; }
+            .roger-hat { width: 90px; height: 25px; top: -35px; }
             .roger-arm-right { width: 38px; height: 110px; }
             .roger-arm-left { width: 35px; height: 100px; }
             .roger-leg { width: 40px; height: 110px; }
             
             .sword { right: -120px; }
             .sword-blade { width: 220px; height: 14px; }
+            .sword-aura { width: 280px; height: 280px; }
+            .lightning-container { width: 400px; height: 400px; }
+            .sword-trail { width: 400px; height: 25px; }
+            .energy-trail { width: 350px; height: 12px; }
             
-            .black-slash { height: 100px; }
-            .white-slash { width: 350px; height: 5px; }
+            .white-slash { width: 500px; height: 8px; }
             
             .attack-text { 
-                font-size: 60px; /* Ridotto da 80px per essere più bilanciato */
-                letter-spacing: 6px; /* Ridotto da 8px */
+                font-size: 60px;
+                letter-spacing: 6px;
             }
             .text-container { top: 15%; }
         }
@@ -576,28 +914,6 @@
                 font-size: 80px;
                 letter-spacing: 8px;
             }
-        }
-
-        /* Istruzioni - NASCONDI SU MOBILE */
-        .help {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.9);
-            color: #fff;
-            padding: 15px 25px;
-            border-radius: 12px;
-            font-family: 'Arial', sans-serif;
-            font-size: 14px;
-            z-index: 100;
-            text-align: center;
-            border: 2px solid #ffd700;
-            display: none; /* Nascondi su mobile */
-        }
-
-        @media (min-width: 768px) {
-            .help { display: block; } /* Mostra solo su desktop */
         }
     </style>
 </head>
@@ -612,8 +928,15 @@
         <!-- Detriti -->
         <div class="debris-container" id="debrisContainer"></div>
 
-        <!-- Slash nero diagonale -->
-        <div class="black-slash"></div>
+        <!-- Scia della spada -->
+        <div class="sword-trail"></div>
+        <div class="energy-trail"></div>
+        
+        <!-- Particelle di energia -->
+        <div class="energy-particles" id="energyParticles"></div>
+
+        <!-- Slash luminoso -->
+        <div class="white-slash"></div>
 
         <!-- TESTO ANIMATO -->
         <div class="text-container">
@@ -624,27 +947,33 @@
         <!-- ODEN (viola - primo piano) -->
         <div class="oden">
             <div class="oden-body">
-                <!-- Corpo a serpente con anelli viola -->
-                <div class="snake-segment seg1"></div>
-                <div class="snake-segment seg2"></div>
-                <div class="snake-segment seg3"></div>
-                <div class="snake-segment seg4"></div>
-                <div class="snake-segment seg5"></div>
-                <div class="snake-segment seg6"></div>
+                <!-- Kimono Oden -->
+                <div class="oden-kimono"></div>
+                
+                <!-- Torso Oden -->
+                <div class="oden-torso"></div>
 
                 <!-- Testa ODEN -->
                 <div class="oden-head">
+                    <!-- Capelli Oden -->
+                    <div class="oden-hair"></div>
+                    <div class="oden-ponytail"></div>
                     <div class="oden-face">
                         <img src="giuse.png" alt="Oden" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
                     </div>
                 </div>
 
-                <!-- Arti -->
-                <div class="oden-limbs">
-                    <div class="limb oden-arm1"></div>
-                    <div class="limb oden-arm2"></div>
-                    <div class="limb oden-leg1"></div>
-                    <div class="limb oden-leg2"></div>
+                <!-- Braccia Oden -->
+                <div class="oden-arm oden-arm1"></div>
+                <div class="oden-arm oden-arm2"></div>
+
+                <!-- Gambe Oden -->
+                <div class="oden-leg oden-leg1"></div>
+                <div class="oden-leg oden-leg2"></div>
+
+                <!-- Spada Oden -->
+                <div class="oden-sword">
+                    <div class="oden-sword-handle"></div>
                 </div>
             </div>
         </div>
@@ -654,11 +983,17 @@
             <div class="roger-body">
                 <div class="roger-cape"></div>
                 <div class="roger-torso">
-                    <div class="roger-belt"></div>
+                    <!-- Cappello Roger -->
+                    <div class="roger-hat">
+                        <div class="roger-hat-feather"></div>
+                    </div>
                 </div>
 
                 <!-- Testa ROGER -->
                 <div class="roger-head">
+                    <!-- Capelli e baffi Roger -->
+                    <div class="roger-hair"></div>
+                    <div class="roger-mustache"></div>
                     <div class="roger-face">
                         <img src='io.png' alt='Roger' style='width:100%; height:100%; object-fit:cover; border-radius:50%;'>                        
                     </div>
@@ -667,6 +1002,15 @@
                 <!-- Braccia -->
                 <div class="roger-arm-left"></div>
                 <div class="roger-arm-right">
+                    <!-- Alone della spada -->
+                    <div class="sword-aura">
+                        <div class="aura-inner"></div>
+                        <div class="aura-outer"></div>
+                    </div>
+                    
+                    <!-- Container saette -->
+                    <div class="lightning-container" id="lightningContainer"></div>
+                    
                     <!-- Spada -->
                     <div class="sword">
                         <div class="sword-handle"></div>
@@ -681,17 +1025,14 @@
             </div>
         </div>
 
-        <!-- Slash bianco luminoso -->
-        <div class="white-slash"></div>
-
     </div>
 
     <script>
         // Genera detriti casuali - ADATTATO PER MOBILE
         const container = document.getElementById('debrisContainer');
         const isMobile = window.innerWidth < 768;
-        const debrisCount = isMobile ? 10 : 20; // Meno detriti su mobile
-        const debrisSize = isMobile ? 150 : 300; // Movimento ridotto su mobile
+        const debrisCount = isMobile ? 10 : 20;
+        const debrisSize = isMobile ? 150 : 300;
         
         for (let i = 0; i < debrisCount; i++) {
             const debris = document.createElement('div');
@@ -706,6 +1047,51 @@
             debris.style.animationDelay = `${Math.random() * 0.5}s`;
             debris.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
             container.appendChild(debris);
+        }
+
+        // Genera particelle di energia
+        const energyContainer = document.getElementById('energyParticles');
+        const particleCount = 15;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'energy-particle';
+            particle.style.width = `${3 + Math.random() * 8}px`;
+            particle.style.height = particle.style.width;
+            particle.style.background = `radial-gradient(circle, 
+                ${Math.random() > 0.5 ? '#ff0000' : '#ff4500'} 0%, 
+                ${Math.random() > 0.5 ? '#8B0000' : '#4a0000'} 50%, 
+                transparent 100%)`;
+            particle.style.left = `${45 + Math.random() * 15}%`;
+            particle.style.top = `${45 + Math.random() * 10}%`;
+            particle.style.setProperty('--p-dx', `${(Math.random() - 0.5) * 200}px`);
+            particle.style.setProperty('--p-dy', `${(Math.random() - 0.5) * 200}px`);
+            particle.style.animationDelay = `${0.4 + Math.random() * 0.3}s`;
+            particle.style.filter = `blur(${1 + Math.random() * 2}px)`;
+            energyContainer.appendChild(particle);
+        }
+
+        // Genera saette
+        const lightningContainer = document.getElementById('lightningContainer');
+        const lightningCount = 8;
+        
+        for (let i = 0; i < lightningCount; i++) {
+            const lightning = document.createElement('div');
+            lightning.className = 'lightning';
+            
+            const angle = (i / lightningCount) * 2 * Math.PI;
+            const length = 80 + Math.random() * 60;
+            const width = 1 + Math.random() * 2;
+            
+            lightning.style.width = `${length}px`;
+            lightning.style.height = `${width}px`;
+            lightning.style.transform = `rotate(${angle}rad)`;
+            lightning.style.transformOrigin = '0 0';
+            lightning.style.top = '50%';
+            lightning.style.left = '50%';
+            lightning.style.animationDelay = `${0.4 + Math.random() * 0.4}s`;
+            
+            lightningContainer.appendChild(lightning);
         }
     </script>
 </body>
