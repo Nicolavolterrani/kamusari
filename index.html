@@ -129,41 +129,41 @@
             }
         }
 
-        /* Corpo serpente viola con anelli */
+        /* Corpo serpente viola con anelli - DIMENSIONI MOBILE */
         .oden-body {
             position: relative;
-            width: 180px;
-            height: 400px;
+            width: 90px; /* Ridotto da 180px */
+            height: 200px; /* Ridotto da 400px */
         }
 
         .snake-segment {
             position: absolute;
-            width: 70px;
-            height: 70px;
+            width: 35px; /* Ridotto da 70px */
+            height: 35px; /* Ridotto da 70px */
             background: linear-gradient(135deg, #7b4bc8 0%, #a066db 50%, #7b4bc8 100%);
             border-radius: 50%;
-            border: 3px solid #fff;
+            border: 2px solid #fff; /* Ridotto da 3px */
         }
 
-        .seg1 { left: 55px; top: 0; }
-        .seg2 { left: 70px; top: 60px; }
-        .seg3 { left: 55px; top: 120px; }
-        .seg4 { left: 40px; top: 180px; }
-        .seg5 { left: 30px; top: 240px; }
-        .seg6 { left: 45px; top: 300px; }
+        .seg1 { left: 27px; top: 0; }
+        .seg2 { left: 35px; top: 30px; }
+        .seg3 { left: 27px; top: 60px; }
+        .seg4 { left: 20px; top: 90px; }
+        .seg5 { left: 15px; top: 120px; }
+        .seg6 { left: 22px; top: 150px; }
 
-        /* Testa Oden */
+        /* Testa Oden - RIDOTTA PER MOBILE */
         .oden-head {
             position: absolute;
-            left: 50px;
-            top: -60px;
-            width: 90px;
-            height: 90px;
+            left: 25px; /* Ridotto da 50px */
+            top: -30px; /* Ridotto da -60px */
+            width: 45px; /* Ridotto da 90px */
+            height: 45px; /* Ridotto da 90px */
             background: #f5d5a8;
             border-radius: 50%;
-            border: 4px solid #7b4bc8;
+            border: 2px solid #7b4bc8; /* Ridotto da 4px */
             z-index: 15;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ridotto */
         }
 
         .oden-face {
@@ -172,10 +172,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 50px;
+            font-size: 25px; /* Ridotto da 50px */
         }
 
-        /* Braccia/gambe Oden */
+        /* Braccia/gambe Oden - RIDOTTE */
         .oden-limbs {
             position: absolute;
             width: 100%;
@@ -185,13 +185,13 @@
         .limb {
             position: absolute;
             background: linear-gradient(180deg, #a066db 0%, #7b4bc8 100%);
-            border-radius: 15px;
+            border-radius: 8px; /* Ridotto da 15px */
         }
 
-        .oden-arm1 { width: 35px; height: 100px; left: 20px; top: 80px; transform: rotate(-40deg); }
-        .oden-arm2 { width: 35px; height: 100px; right: 30px; top: 100px; transform: rotate(30deg); }
-        .oden-leg1 { width: 40px; height: 120px; left: 35px; bottom: -80px; transform: rotate(-15deg); }
-        .oden-leg2 { width: 40px; height: 120px; right: 50px; bottom: -60px; transform: rotate(25deg); }
+        .oden-arm1 { width: 18px; height: 50px; left: 10px; top: 40px; transform: rotate(-40deg); }
+        .oden-arm2 { width: 18px; height: 50px; right: 15px; top: 50px; transform: rotate(30deg); }
+        .oden-leg1 { width: 20px; height: 60px; left: 18px; bottom: -40px; transform: rotate(-15deg); }
+        .oden-leg2 { width: 20px; height: 60px; right: 25px; bottom: -30px; transform: rotate(25deg); }
 
         /* ROGER - Personaggio rosso/arancio dietro (destra) */
         .roger {
@@ -205,21 +205,21 @@
 
         @keyframes rogerSlash {
             0%, 100% { transform: translate(-50%, -50%) rotate(-15deg); }
-            50% { transform: translate(-50%, -50%) rotate(-5deg) translateX(-20px); }
+            50% { transform: translate(-50%, -50%) rotate(-5deg) translateX(-10px); } /* Ridotto movimento */
         }
 
-        /* Corpo Roger */
+        /* Corpo Roger - RIDOTTO */
         .roger-body {
             position: relative;
-            width: 160px;
-            height: 280px;
+            width: 80px; /* Ridotto da 160px */
+            height: 140px; /* Ridotto da 280px */
         }
 
         .roger-torso {
-            width: 140px;
-            height: 180px;
+            width: 70px; /* Ridotto da 140px */
+            height: 90px; /* Ridotto da 180px */
             background: linear-gradient(135deg, #ff6b4a 0%, #ff8c6b 50%, #ff6b4a 100%);
-            border-radius: 30px 30px 20px 20px;
+            border-radius: 15px 15px 10px 10px; /* Ridotto */
             position: relative;
         }
 
@@ -227,37 +227,37 @@
         .roger-belt {
             position: absolute;
             width: 100%;
-            height: 12px;
+            height: 6px; /* Ridotto da 12px */
             background: linear-gradient(90deg, #ffd700 0%, #ffe44d 50%, #ffd700 100%);
             top: 60%;
-            border-radius: 6px;
+            border-radius: 3px; /* Ridotto da 6px */
         }
 
         /* Mantello rosso scuro */
         .roger-cape {
             position: absolute;
-            width: 150px;
-            height: 140px;
+            width: 75px; /* Ridotto da 150px */
+            height: 70px; /* Ridotto da 140px */
             background: linear-gradient(180deg, #cc3333 0%, #991f1f 100%);
-            bottom: -20px;
-            left: -5px;
-            border-radius: 10px 10px 30px 30px;
+            bottom: -10px; /* Ridotto da -20px */
+            left: -3px; /* Ridotto da -5px */
+            border-radius: 5px 5px 15px 15px; /* Ridotto */
             z-index: -1;
         }
 
-        /* Testa Roger */
+        /* Testa Roger - RIDOTTA */
         .roger-head {
             position: absolute;
             left: 50%;
-            top: -50px;
+            top: -25px; /* Ridotto da -50px */
             transform: translateX(-50%);
-            width: 85px;
-            height: 85px;
+            width: 42px; /* Ridotto da 85px */
+            height: 42px; /* Ridotto da 85px */
             background: #f5d5a8;
             border-radius: 50%;
-            border: 4px solid #ff6b4a;
+            border: 2px solid #ff6b4a; /* Ridotto da 4px */
             z-index: 20;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ridotto */
         }
 
         .roger-face {
@@ -266,18 +266,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 45px;
+            font-size: 22px; /* Ridotto da 45px */
         }
 
-        /* Braccia Roger */
+        /* Braccia Roger - RIDOTTE */
         .roger-arm-right {
             position: absolute;
-            width: 38px;
-            height: 110px;
+            width: 19px; /* Ridotto da 38px */
+            height: 55px; /* Ridotto da 110px */
             background: linear-gradient(180deg, #ff8c6b 0%, #ff6b4a 100%);
-            border-radius: 19px;
-            right: -25px;
-            top: 30px;
+            border-radius: 10px; /* Ridotto da 19px */
+            right: -13px; /* Ridotto da -25px */
+            top: 15px; /* Ridotto da 30px */
             transform: rotate(45deg);
             z-index: 25;
             animation: armSwing 1.5s ease-in-out infinite;
@@ -293,49 +293,49 @@
 
         .roger-arm-left {
             position: absolute;
-            width: 35px;
-            height: 100px;
+            width: 18px; /* Ridotto da 35px */
+            height: 50px; /* Ridotto da 100px */
             background: linear-gradient(180deg, #ff8c6b 0%, #ff6b4a 100%);
-            border-radius: 17px;
-            left: -20px;
-            top: 40px;
+            border-radius: 9px; /* Ridotto da 17px */
+            left: -10px; /* Ridotto da -20px */
+            top: 20px; /* Ridotto da 40px */
             transform: rotate(-30deg);
         }
 
-        /* Gambe Roger */
+        /* Gambe Roger - RIDOTTE */
         .roger-leg {
             position: absolute;
-            width: 40px;
-            height: 110px;
+            width: 20px; /* Ridotto da 40px */
+            height: 55px; /* Ridotto da 110px */
             background: linear-gradient(180deg, #ff6b4a 0%, #cc3333 100%);
-            border-radius: 20px;
-            bottom: -30px;
+            border-radius: 10px; /* Ridotto da 20px */
+            bottom: -15px; /* Ridotto da -30px */
         }
 
-        .roger-leg1 { left: 25px; transform: rotate(-10deg); }
-        .roger-leg2 { right: 25px; transform: rotate(10deg); }
+        .roger-leg1 { left: 12px; transform: rotate(-10deg); }
+        .roger-leg2 { right: 12px; transform: rotate(10deg); }
 
-        /* SPADA NERA */
+        /* SPADA NERA - RIDOTTA */
         .sword {
             position: absolute;
-            right: -120px;
+            right: -60px; /* Ridotto da -120px */
             top: 0px;
-            transform-origin: 30px 50%;
+            transform-origin: 15px 50%; /* Ridotto da 30px */
             z-index: 30;
             animation: swordStrike 1.5s ease-in-out infinite;
         }
 
         @keyframes swordStrike {
-            0% { transform: rotate(-90deg) translateX(-20px); }
+            0% { transform: rotate(-90deg) translateX(-10px); }
             30% { transform: rotate(-50deg) translateX(0); }
-            50% { transform: rotate(-20deg) translateX(10px); }
+            50% { transform: rotate(-20deg) translateX(5px); }
             70% { transform: rotate(-50deg) translateX(0); }
-            100% { transform: rotate(-90deg) translateX(-20px); }
+            100% { transform: rotate(-90deg) translateX(-10px); }
         }
 
         .sword-blade {
-            width: 220px;
-            height: 14px;
+            width: 110px; /* Ridotto da 220px */
+            height: 7px; /* Ridotto da 14px */
             background: linear-gradient(90deg, 
                 #1a1a1a 0%, 
                 #000 10%, 
@@ -344,50 +344,50 @@
                 #1a1a1a 60%,
                 #000 80%,
                 #2a2a2a 100%);
-            border-radius: 0 7px 7px 0;
+            border-radius: 0 4px 4px 0; /* Ridotto */
             position: relative;
             box-shadow: 
-                0 0 15px rgba(255, 255, 255, 0.3),
-                0 3px 8px rgba(0, 0, 0, 0.8);
+                0 0 8px rgba(255, 255, 255, 0.3),
+                0 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         .sword-blade::before {
             content: '';
             position: absolute;
-            top: 5px;
-            left: 20px;
-            right: 30px;
+            top: 3px;
+            left: 10px;
+            right: 15px;
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
         }
 
         .sword-handle {
             position: absolute;
-            left: -28px;
+            left: -14px; /* Ridotto da -28px */
             top: 50%;
             transform: translateY(-50%);
-            width: 32px;
-            height: 22px;
+            width: 16px; /* Ridotto da 32px */
+            height: 11px; /* Ridotto da 22px */
             background: linear-gradient(135deg, #654321, #8b6914);
-            border-radius: 4px;
+            border-radius: 2px; /* Ridotto da 4px */
         }
 
         .sword-guard {
             position: absolute;
-            left: -3px;
+            left: -2px; /* Ridotto da -3px */
             top: 50%;
             transform: translateY(-50%);
-            width: 12px;
-            height: 32px;
+            width: 6px; /* Ridotto da 12px */
+            height: 16px; /* Ridotto da 32px */
             background: linear-gradient(135deg, #c9a236, #ffd700);
-            border-radius: 2px;
+            border-radius: 1px; /* Ridotto da 2px */
         }
 
-        /* SLASH NERO DIAGONALE */
+        /* SLASH NERO DIAGONALE - RIDOTTO */
         .black-slash {
             position: absolute;
             width: 140%;
-            height: 100px;
+            height: 50px; /* Ridotto da 100px */
             background: linear-gradient(to bottom,
                 transparent 0%,
                 rgba(0, 0, 0, 0.95) 35%,
@@ -403,7 +403,7 @@
 
         @keyframes slashMove {
             0% { 
-                transform: translateY(-50%) rotate(-40deg) translateX(-80px);
+                transform: translateY(-50%) rotate(-40deg) translateX(-40px);
                 opacity: 0;
             }
             45% {
@@ -414,16 +414,16 @@
                 transform: translateY(-50%) rotate(-40deg) translateX(0px);
             }
             100% { 
-                transform: translateY(-50%) rotate(-40deg) translateX(80px);
+                transform: translateY(-50%) rotate(-40deg) translateX(40px);
                 opacity: 0.8;
             }
         }
 
-        /* EFFETTO SLASH BIANCO LUMINOSO */
+        /* EFFETTO SLASH BIANCO LUMINOSO - RIDOTTO */
         .white-slash {
             position: absolute;
-            width: 350px;
-            height: 5px;
+            width: 175px; /* Ridotto da 350px */
+            height: 3px; /* Ridotto da 5px */
             background: linear-gradient(90deg, 
                 transparent 0%,
                 rgba(255, 255, 255, 0.3) 20%,
@@ -435,9 +435,9 @@
             transform: translateY(-50%) rotate(-40deg);
             z-index: 35;
             box-shadow: 
-                0 0 20px rgba(255, 255, 255, 0.9),
-                0 0 40px rgba(255, 255, 255, 0.5),
-                0 0 60px rgba(255, 255, 255, 0.3);
+                0 0 10px rgba(255, 255, 255, 0.9),
+                0 0 20px rgba(255, 255, 255, 0.5),
+                0 0 30px rgba(255, 255, 255, 0.3);
             animation: whiteSlashGlow 1.5s ease-in-out infinite;
         }
 
@@ -460,41 +460,10 @@
             }
         }
 
-        /* Istruzioni */
-        .help {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.9);
-            color: #fff;
-            padding: 15px 25px;
-            border-radius: 12px;
-            font-family: 'Arial', sans-serif;
-            font-size: 14px;
-            z-index: 100;
-            text-align: center;
-            border: 2px solid #ffd700;
-        }
-
-        .help strong {
-            color: #ffd700;
-            display: block;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-
-        .help code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 12px;
-        }
-
-        /* TESTO ANIMATO */
+        /* TESTO ANIMATO - RIDOTTO PER MOBILE */
         .text-container {
             position: absolute;
-            top: 15%;
+            top: 10%; /* Spostato più in alto */
             left: 50%;
             transform: translateX(-50%);
             z-index: 50;
@@ -502,20 +471,20 @@
 
         .attack-text {
             font-family: 'Impact', 'Arial Black', sans-serif;
-            font-size: 80px;
+            font-size: 30px; /* Ridotto da 80px */
             font-weight: 900;
-            letter-spacing: 8px;
+            letter-spacing: 3px; /* Ridotto da 8px */
             text-align: center;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
             text-shadow: 
-                4px 4px 0px #000,
-                -4px -4px 0px #000,
-                4px -4px 0px #000,
-                -4px 4px 0px #000,
-                0 0 20px rgba(255, 255, 255, 0.5);
+                2px 2px 0px #000,
+                -2px -2px 0px #000,
+                2px -2px 0px #000,
+                -2px 2px 0px #000,
+                0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         .yo-samurai {
@@ -565,6 +534,57 @@
                 transform: translateX(-50%) scale(1) rotateX(0deg);
             }
         }
+
+        /* MEDIA QUERIES PER DISPOSITIVI PIÙ GRANDI */
+        @media (min-width: 768px) {
+            /* Ripristina dimensioni originali per tablet e desktop */
+            .oden-body { width: 180px; height: 400px; }
+            .snake-segment { width: 70px; height: 70px; }
+            .oden-head { width: 90px; height: 90px; left: 50px; top: -60px; }
+            .oden-face { font-size: 50px; }
+            .limb { border-radius: 15px; }
+            .oden-arm1, .oden-arm2 { width: 35px; height: 100px; }
+            .oden-leg1, .oden-leg2 { width: 40px; height: 120px; }
+            
+            .roger-body { width: 160px; height: 280px; }
+            .roger-torso { width: 140px; height: 180px; }
+            .roger-head { width: 85px; height: 85px; top: -50px; }
+            .roger-face { font-size: 45px; }
+            .roger-arm-right { width: 38px; height: 110px; }
+            .roger-arm-left { width: 35px; height: 100px; }
+            .roger-leg { width: 40px; height: 110px; }
+            
+            .sword { right: -120px; }
+            .sword-blade { width: 220px; height: 14px; }
+            
+            .black-slash { height: 100px; }
+            .white-slash { width: 350px; height: 5px; }
+            
+            .attack-text { font-size: 80px; letter-spacing: 8px; }
+            .text-container { top: 15%; }
+        }
+
+        /* Istruzioni - NASCONDI SU MOBILE */
+        .help {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            z-index: 100;
+            text-align: center;
+            border: 2px solid #ffd700;
+            display: none; /* Nascondi su mobile */
+        }
+
+        @media (min-width: 768px) {
+            .help { display: block; } /* Mostra solo su desktop */
+        }
     </style>
 </head>
 <body>
@@ -598,12 +618,10 @@
                 <div class="snake-segment seg5"></div>
                 <div class="snake-segment seg6"></div>
 
-                <!-- Testa ODEN - CAMBIA QUI LA FACCIA -->
+                <!-- Testa ODEN -->
                 <div class="oden-head">
                     <div class="oden-face">
-                        <div class="oden-face">
-                            <img src="giuse.png" alt="Oden" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
-                        </div>
+                        <img src="giuse.png" alt="Oden" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
                     </div>
                 </div>
 
@@ -625,7 +643,7 @@
                     <div class="roger-belt"></div>
                 </div>
 
-                <!-- Testa ROGER - CAMBIA QUI LA FACCIA -->
+                <!-- Testa ROGER -->
                 <div class="roger-head">
                     <div class="roger-face">
                         <img src='io.png' alt='Roger' style='width:100%; height:100%; object-fit:cover; border-radius:50%;'>                        
@@ -655,17 +673,21 @@
     </div>
 
     <script>
-        // Genera detriti casuali
+        // Genera detriti casuali - ADATTATO PER MOBILE
         const container = document.getElementById('debrisContainer');
-        for (let i = 0; i < 20; i++) {
+        const isMobile = window.innerWidth < 768;
+        const debrisCount = isMobile ? 10 : 20; // Meno detriti su mobile
+        const debrisSize = isMobile ? 150 : 300; // Movimento ridotto su mobile
+        
+        for (let i = 0; i < debrisCount; i++) {
             const debris = document.createElement('div');
             debris.className = 'debris';
-            debris.style.width = `${3 + Math.random() * 10}px`;
-            debris.style.height = `${3 + Math.random() * 10}px`;
+            debris.style.width = `${2 + Math.random() * 6}px`;
+            debris.style.height = `${2 + Math.random() * 6}px`;
             debris.style.left = `${40 + Math.random() * 20}%`;
             debris.style.top = `${35 + Math.random() * 30}%`;
-            debris.style.setProperty('--dx', `${(Math.random() - 0.5) * 300}px`);
-            debris.style.setProperty('--dy', `${(Math.random() - 0.5) * 300}px`);
+            debris.style.setProperty('--dx', `${(Math.random() - 0.5) * debrisSize}px`);
+            debris.style.setProperty('--dy', `${(Math.random() - 0.5) * debrisSize}px`);
             debris.style.setProperty('--rot', `${Math.random() * 720}deg`);
             debris.style.animationDelay = `${Math.random() * 0.5}s`;
             debris.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
